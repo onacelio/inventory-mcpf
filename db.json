@@ -1,0 +1,33 @@
+{
+  "inventorys": [],
+  "locales": [
+    {
+      "id": 1,
+      "name": "Inventário Pessoal"
+    },
+    {
+      "id": 2,
+      "name": "Laboratorio de Informática"
+    },
+    {
+      "id": 3,
+      "name": "Laboratorio de Matemática"
+    },
+    {
+      "id": 4,
+      "name": "Almoxarifado geral"
+    },
+    {
+      "id": 5,
+      "name": "Secretaria"
+    },
+    {
+      "id": 6,
+      "name": "Biblioteca"
+    },
+    {
+      "id": 7,
+      "name": "Cozinha"
+    }
+  ]
+}
