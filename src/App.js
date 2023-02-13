@@ -7,6 +7,7 @@ import About from "./components/pages/About";
 
 //Componentes de páginas
 import Home from "./components/pages/Home";
+import Inventory from "./components/pages/Inventory";
 import Inventorys from "./components/pages/Inventorys";
 import NewInventory from "./components/pages/NewInventory";
 
@@ -20,6 +21,7 @@ export default function App() {
         <Route path="/inventorys" element={<Inventorys />} />
         <Route path="/about" element={<About />} />
         <Route path="/new-inventory" element={<NewInventory />} />
+        <Route path="/inventory/:id" element={<Inventory />}/> 
       </Routes>
       
       <Footer />

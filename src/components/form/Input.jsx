@@ -7,7 +7,7 @@ export default function Input({ text, name, placeholder, handleOnChange, value }
                 placeholder={placeholder}
                 id={name}
                 name={name}
-                onChange={handleOnChange}
+                onChange={handleOnChange}  
                 value={value}
                 className="rounded border-2 border-mcpf-green p-2 focus:border-black duration-300"
             />

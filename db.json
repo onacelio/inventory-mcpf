@@ -1,5 +1,15 @@
 {
-  "inventorys": [],
+  "inventorys": [
+    {
+      "name": "kkkolha o inventário",
+      "locale": {
+        "id": "4",
+        "name": "Almoxarifado geral"
+      },
+      "items": [],
+      "id": 1
+    }
+  ],
   "locales": [
     {
       "id": 1,
