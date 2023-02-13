@@ -38,7 +38,7 @@ export default function NewInventoryForm({ handleSubmit, btnText, inventoryData}
     }
 
     return (
-        <form onSubmit={submit} className="w-6/12 flex flex-col justify-center items-center">
+        <form onSubmit={submit} className="w-full flex flex-col justify-center items-center">
             <Input 
                 type="text"
                 text="Nome do Inventário"

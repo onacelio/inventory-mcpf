@@ -17,7 +17,7 @@ export default function Footer() {
                 <span className="text-mcpf-yellow">Inventory MCPF </span>&copy; 2023
             </p>
             <p>
-                <Link to="/"><img src={logo} alt="logo MCPF" className="w-40" /></Link>
+                <Link to="/"><img src={logo} alt="logo MCPF" className="w-40 hidden sm:flex" /></Link>
             </p>
         </footer>
     )

@@ -1,22 +1,31 @@
 {
   "inventorys": [
     {
-      "name": "kkkolha o inventário",
+      "name": "Teste com  justify  center",
       "locale": {
-        "id": "4",
-        "name": "Almoxarifado geral"
+        "id": "7",
+        "name": "Cozinha"
       },
       "items": [],
       "id": 1
     },
     {
-      "name": "333",
+      "name": "qd",
       "locale": {
-        "id": "1",
-        "name": "Inventário Pessoal"
+        "id": "5",
+        "name": "Secretaria"
       },
       "items": [],
       "id": 2
+    },
+    {
+      "name": "ssaa",
+      "locale": {
+        "id": "3",
+        "name": "Laboratorio de Matemática"
+      },
+      "items": [],
+      "id": 3
     }
   ],
   "locales": [
