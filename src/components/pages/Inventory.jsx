@@ -1,6 +1,6 @@
 export default function Inventory() {
     return (
-        <div>
+        <div className="h-heigth-90">
             Inventário
         </div>
     )

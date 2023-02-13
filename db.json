@@ -8,6 +8,15 @@
       },
       "items": [],
       "id": 1
+    },
+    {
+      "name": "333",
+      "locale": {
+        "id": "1",
+        "name": "Inventário Pessoal"
+      },
+      "items": [],
+      "id": 2
     }
   ],
   "locales": [

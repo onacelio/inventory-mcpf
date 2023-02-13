@@ -13,6 +13,9 @@ module.exports = {
         "mcpf-background": "#03735B",
         "mcpf-text": "#001514",
         "mcpf-yellow": "#FFD61F"
+      },
+      height: {
+        'heigth-90': '90vh',
       }
     },
   },

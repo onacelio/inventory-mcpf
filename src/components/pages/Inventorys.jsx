@@ -24,7 +24,7 @@ export default function Inventorys() {
     }
 
     return (
-        <section>
+        <section className="h-heigth-90">
             <div className="flex justify-between items-center p-5">
                 <h1>INVENTÁRIOS</h1>
                 <LinkButton to="/new-inventory" text="CRIAR INVENTÁRIO"/>
