@@ -1,31 +1,13 @@
 {
   "inventorys": [
     {
-      "name": "Teste com  justify  center",
+      "name": "Inventory MCPF",
       "locale": {
-        "id": "7",
-        "name": "Cozinha"
+        "id": "1",
+        "name": "Inventário Pessoal"
       },
       "items": [],
       "id": 1
-    },
-    {
-      "name": "qd",
-      "locale": {
-        "id": "5",
-        "name": "Secretaria"
-      },
-      "items": [],
-      "id": 2
-    },
-    {
-      "name": "ssaa",
-      "locale": {
-        "id": "3",
-        "name": "Laboratorio de Matemática"
-      },
-      "items": [],
-      "id": 3
     }
   ],
   "locales": [

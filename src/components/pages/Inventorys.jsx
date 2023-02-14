@@ -37,12 +37,12 @@ export default function Inventorys() {
     }
 
     return (
-        <section className="p-3 w-full min-h-screen flex flex-col">
+        <section className="p-3 flex flex-col w-full min-h-screen">
             <div className="flex justify-between items-center p-5">
                 <h1>INVENTÁRIOS</h1>
                 <LinkButton to="/new-inventory" text="CRIAR INVENTÁRIO"/>
             </div>
-            <div className="flex flex-col justify-center sm:flex-row">
+            <div className="flex flex-wrap max-w-full justify-start">
                 {   inventorys.length > 0 &&
                     inventorys.map((inventory) => (
                         <InventoryCard 

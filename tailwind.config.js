@@ -15,7 +15,7 @@ module.exports = {
         "mcpf-yellow": "#FFD61F"
       },
       height: {
-        'heigth-90': '90vh',
+        'heigth-90': '80vh',
       }
     },
   },

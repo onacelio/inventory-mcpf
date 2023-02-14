@@ -1,4 +1,3 @@
-
 import { BsFillTrashFill } from "react-icons/bs"
 import LinkButton from "../layout/LinkButton";
 
@@ -10,7 +9,7 @@ export default function InventoryCard({ id, name, locale, handleRemove}) {
     }
 
     return (
-        <div className="p-3 border-mcpf-background rounded border-2 m-1 w-full font-poppins md:w-6/12">
+        <div className="p-3 flex flex-col border-mcpf-background rounded border-2 m-1 font-poppins ">
             <h4 className="text-mcpf-yellow font-bold uppercase text-xl mb-2">
                 {name}
             </h4>
