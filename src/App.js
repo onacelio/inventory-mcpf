@@ -7,9 +7,11 @@ import About from "./components/pages/About";
 
 //Componentes de páginas
 import Home from "./components/pages/Home";
-import Inventory from "./components/pages/Inventory";
+
 import Inventorys from "./components/pages/Inventorys";
 import NewInventory from "./components/pages/NewInventory";
+import AddItemInInventory from "./components/pages/AddItemInInventory";
+import Inventory from "./components/pages/Inventory";
 
 export default function App() {
   return (
@@ -21,7 +23,8 @@ export default function App() {
         <Route path="/inventorys" element={<Inventorys />} />
         <Route path="/about" element={<About />} />
         <Route path="/new-inventory" element={<NewInventory />} />
-        <Route path="/inventory/:id" element={<Inventory />}/> 
+        <Route path="/inventory/:id" element={<Inventory />} />
+        <Route path="/inventory/add/:id" element={<AddItemInInventory />}/> 
       </Routes>
       
       <Footer />
