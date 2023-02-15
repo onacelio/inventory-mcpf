@@ -1,5 +1,4 @@
-import { useState } from "react"
-import { useParams } from "react-router-dom"
+import { useEffect, useState } from "react"
 import Input from "../form/Input"
 import Select from "../form/Select"
 import SubmitButton from "../form/SubmitButton"
@@ -7,24 +6,37 @@ import SubmitButton from "../form/SubmitButton"
 export default function ItemsForm({ btnText, inventoryData, handleSubmit }) {
 
     const [states, setStates] = useState([])
+    const [item, setItem] = useState([])
+    const [inventory, setInventory] = useState(inventoryData || [])
 
-    fetch("http://localhost:5000/states", {
-        method: "GET", 
-        headers: {
-            "Content-Type": "application/json"
-        }
-    }).then((resp) => resp.json())
-    .then((data) => {
-        setStates(data)
-    })
-    .catch(err => console.log(err))
+    useEffect(() => {
+        fetch("http://localhost:5000/states", {
+            method: "GET", 
+            headers: {
+                "Content-Type": "application/json"
+            }
+        }).then((resp) => resp.json())
+        .then((data) => {
+            setStates(data)
+        })
+        .catch(err => console.log(err))
+    }, [])
 
     function submit(e) {
         e.preventDefault()
+        inventoryData.items.push(item)
+        handleSubmit(inventoryData)
     }
 
-    function handleChange() {
+    function handleChange(e) {
+        setItem({ ...item, [e.target.name]: e.target.value })
+    }
 
+    function handleState(e) {
+        setInventory({ ...item, state: {
+            id: e.target.value,
+            name: e.target.options[e.target.selectedIndex].text
+        } })
     }
 
     return (
@@ -40,16 +52,17 @@ export default function ItemsForm({ btnText, inventoryData, handleSubmit }) {
             <Input 
                 type="number"
                 text="Quantidade do item"
-                name="name"
+                name="quantity"
                 placeholder="Insira a quantidade exata do item"
                 handleOnChange={handleChange}
             />
 
-            <Select 
-                name="locale_id"
-                text="Selecione o estado do item"
-                options={states}
-                handleOnChange={handleStateItem}
+            <Input 
+                type="text"
+                text="Estado do item"
+                name="state"
+                placeholder="Insira o estado do item"
+                handleOnChange={handleChange}
             />
 
             <SubmitButton 

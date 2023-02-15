@@ -39,19 +39,5 @@
       "id": 7,
       "name": "Cozinha"
     }
-  ],
-  "states": [
-    {
-      "id": 1,
-      "name": "Funcionando"
-    },
-    {
-      "id": 2,
-      "name": "Quebrado"
-    },
-    {
-      "id": 3,
-      "name": "Em falta"
-    }
   ]
 }

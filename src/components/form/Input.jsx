@@ -1,7 +1,7 @@
 export default function Input({ text, name, placeholder, handleOnChange, value }) {
     return (
         <div className="flex flex-col p-3 w-6/12 gap-2">
-            <label htmlFor={name} className="uppercase text-base">{text}</label>
+            <label htmlFor={name} className="uppercase text-base font-bold">{text}</label>
             <input 
                 type={text}
                 placeholder={placeholder}
