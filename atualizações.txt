@@ -1,0 +1,8 @@
+Página para mostrar todos os itens do Inventário
+Remover item
+Editar Inventário
+Editar item
+
+Atualizar o layout
+
+Conexão de conta com o google
