@@ -1,12 +1,21 @@
 import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import InventoryCard from "../inventory/InvetoryCard";
 import LinkButton from "../layout/LinkButton";
 import Loading from "../layout/Loading"
+import Message from "../layout/Message";
 
 export default function Inventorys() {
 
     const [inventorys, setInventorys] = useState([])
     const [removeLoading, setRemoveLoading] = useState(false)
+    const [inventoryMessage, setInventoryMessage] = useState("")
+
+    const location = useLocation()
+    let message = ""
+    if(location.state) {
+        message = location.state.message
+    }
 
     useEffect(() => {
         setTimeout(() => {
@@ -33,6 +42,7 @@ export default function Inventorys() {
         }).then(resp => resp.json())
         .then(() => {
             setInventorys(inventorys.filter((inventory) => inventory.id !== id))
+            setInventoryMessage("Inventário removido com sucesso")
         }).catch(err => console.log(err))
     }
 
@@ -42,6 +52,14 @@ export default function Inventorys() {
                 <h1>INVENTÁRIOS</h1>
                 <LinkButton to="/new-inventory" text="CRIAR INVENTÁRIO"/>
             </div>
+
+            { message &&
+                <Message msg={message} type="bg-mcpf-green text-mcpf-text" />
+            }
+            { inventoryMessage &&
+                <Message msg={inventoryMessage} type="bg-mcpf-green text-mcpf-text" />
+            }
+
             <div className="flex flex-wrap max-w-full justify-start">
                 {   inventorys.length > 0 &&
                     inventorys.map((inventory) => (
@@ -59,7 +77,9 @@ export default function Inventorys() {
                 }
                 {   removeLoading && inventorys.length === 0 &&
                     (
-                        <p>Não há inventários cadastrados!</p>
+                        <div className="w-full h-screen flex items-center justify-center">
+                            <p className="text-mcpf-text text-3xl font-bold uppercase">Não há inventários cadastrados!</p>
+                        </div>
                     )
                 }
             </div>

@@ -1,5 +1,3 @@
-Página para mostrar todos os itens do Inventário
-Remover item
 Editar Inventário
 Editar item
 

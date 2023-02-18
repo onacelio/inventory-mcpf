@@ -6,7 +6,14 @@
         "id": "1",
         "name": "Inventário Pessoal"
       },
-      "items": [],
+      "items": [
+        {
+          "name": "Tênis",
+          "quantity": "1",
+          "state": "Novo",
+          "id": "f1548c9b-706d-414b-ad3c-5c0c395838bc"
+        }
+      ],
       "id": 1
     }
   ],
