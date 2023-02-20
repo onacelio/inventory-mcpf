@@ -70,7 +70,11 @@ export default function Inventory() {
                     ))
                 }
                 {   !removeLoading &&
-                    <Loading />
+                    (
+                        <div className="w-full h-screen flex items-center justify-center">
+                            <Loading text="Carregando items do inventário" />
+                        </div>
+                    )
                 }
                 { removeLoading && items.length === 0 &&
                     (

@@ -10,6 +10,7 @@ export default function Inventorys() {
     const [inventorys, setInventorys] = useState([])
     const [removeLoading, setRemoveLoading] = useState(false)
     const [inventoryMessage, setInventoryMessage] = useState("")
+    const user = JSON.parse(sessionStorage.getItem("@AuthFirebase:user"))
 
     const location = useLocation()
     let message = ""
@@ -49,8 +50,10 @@ export default function Inventorys() {
     return (
         <section className="p-3 flex flex-col w-full min-h-screen">
             <div className="flex justify-between items-center p-5">
-                <h1>INVENTÁRIOS</h1>
-                <LinkButton to="/new-inventory" text="CRIAR INVENTÁRIO"/>
+                { user.email.split("@")[1] !== "aluno.ce.gov.br" ? (
+                    <><h1>INVENTÁRIOS</h1><LinkButton to="/new-inventory" text="CRIAR INVENTÁRIO" /></>)
+                : <h1>INVENTÁRIOS</h1>
+                }
             </div>
 
             { message &&
@@ -73,7 +76,9 @@ export default function Inventorys() {
                     ))
                 } 
                 {   !removeLoading &&
-                    <Loading />
+                    <div className="w-full h-screen flex items-center justify-center">
+                        <Loading text="Carregando inventários"/>
+                    </div>
                 }
                 {   removeLoading && inventorys.length === 0 &&
                     (

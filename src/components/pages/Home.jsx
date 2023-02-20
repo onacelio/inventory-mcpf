@@ -2,6 +2,7 @@ import brasao from "../../img/brasao.png"
 import LinkButton from "../layout/LinkButton"
 
 export default function Home() {
+
     return (
         <section className="mb-2w-full flex items-center justify-center font-poppins p-14 h-heigth-90">
             <div className="w-full sm:w-6/12 ml-5 p-2">

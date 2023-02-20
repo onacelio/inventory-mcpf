@@ -1,5 +1,22 @@
 {
-  "inventorys": [],
+  "inventorys": [
+    {
+      "name": "Teste",
+      "locale": {
+        "id": "1",
+        "name": "Inventário Pessoal"
+      },
+      "items": [
+        {
+          "name": "Nacélio",
+          "quantity": "1",
+          "state": "Novo",
+          "id": "18fbe7bb-8b8a-4c18-bb68-21b9390e0f34"
+        }
+      ],
+      "id": 1
+    }
+  ],
   "locales": [
     {
       "id": 1,
