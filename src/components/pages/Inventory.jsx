@@ -54,7 +54,7 @@ export default function Inventory() {
     }
 
     return (
-        <div className="p-3 flex flex-col w-full min-h-screen">
+        <div className="mt-28 p-3 flex flex-col w-full min-h-screen">
             {message && <Message type="bg-mcpf-green text-mcpf-text" msg={message}/>}
             <div className="flex flex-wrap max-w-full justify-start">
                 { items.length > 0 &&

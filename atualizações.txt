@@ -5,5 +5,4 @@ Editar item
 Atualizar o layout
 
 - Atualizações após a primeira versão.
-Conexão de conta com o google
 Aluno fazer solicitação de itens existentes do inventário

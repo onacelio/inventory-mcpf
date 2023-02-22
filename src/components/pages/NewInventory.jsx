@@ -22,7 +22,7 @@ export default function NewInventory() {
     }
 
     return (
-        <div className="mb-2 w-full flex flex-col items-center justify-center font-poppins gap-6 h-heigth-90">
+        <div className="mt-28 mb-2 w-full flex flex-col items-center justify-center font-poppins gap-6 h-heigth-90">
             <h1 className="text-3xl font-bold uppercase">Criar inventário</h1>
             <p>Crie o inventário para depois adicionar os itens</p>
             <NewInventoryForm handleSubmit={createPost} btnText="Criar Inventário"/>

@@ -9,7 +9,7 @@ export default function Footer() {
 
     if(signed) {
         return (
-            <footer className="flex justify-between items-center p-8 bg-mcpf-green">
+            <footer className="flex justify-between items-center p-6 bg-mcpf-green">
                 <ul className="flex">
                     <li className="mr-4 hover:text-mcpf-yellow duration-300">
                         <a href="http://instagram.com/eeep_mariacelia" target="_blank" rel="noreferrer"><FaInstagram className="text-2xl"/></a>

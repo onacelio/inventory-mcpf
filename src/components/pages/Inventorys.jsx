@@ -48,7 +48,7 @@ export default function Inventorys() {
     }
 
     return (
-        <section className="p-3 flex flex-col w-full min-h-screen">
+        <section className="mt-28 p-3 flex flex-col w-full min-h-screen">
             <div className="flex justify-between items-center p-5">
                 { user.email.split("@")[1] !== "aluno.ce.gov.br" ? (
                     <><h1>INVENTÁRIOS</h1><LinkButton to="/new-inventory" text="CRIAR INVENTÁRIO" /></>)

@@ -14,7 +14,7 @@ export default function Login() {
 
     if(!signed) {
         return (
-            <section className="w-full h-screen flex items-center justify-center gap-5 font-poppins p-14 h-heigth-90">
+            <section className="w-full h-screen flex items-center justify-center gap-5 font-poppins p-14">
                 <div className="w-full flex flex-col gap-5 sm:w-6/12 ml-5 p-5">
                     <h1 className="mb-5 text-5xl"><span className="text-mcpf-yellow font-bold">INVENTORY - MCPF</span></h1>
                     <p className="mb-5 text-3xl">Faça seu login para acessar a plataforma!</p>

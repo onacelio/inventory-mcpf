@@ -46,7 +46,7 @@ export default function AddItemInInventory() {
     }
 
     return (
-        <div className="h-heigth-90 flex flex-col justify-center items-center">
+        <div className="mt-28 h-heigth-90 flex flex-col justify-center items-center">
             { message &&
                 <Message msg={message} type="bg-mcpf-green text-mcpf-text" />
             }
