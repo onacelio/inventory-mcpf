@@ -5,10 +5,10 @@ import Inventorys from "../components/pages/Inventorys"
 import About from "../components/pages/About"
 import NewInventory from "../components/pages/NewInventory"
 import Inventory from "../components/pages/Inventory"
-import AddItemInInventory from "../components/pages/AddItemInInventory"
 import Navbar from "../components/layout/Navbar"
 import Footer from "../components/layout/Footer"
 import PrivateRoutes from "."
+import DetailsInventory from "../components/pages/DetailsInventory"
 
 export default function AppRoutes() {
     return (
@@ -32,8 +32,8 @@ export default function AppRoutes() {
                 <Route path="/inventory/:id" element={<PrivateRoutes />}>
                     <Route path="/inventory/:id" element={<Inventory />} />
                 </Route>
-                <Route path="/inventory/add/:id" element={<PrivateRoutes />}>
-                    <Route path="/inventory/add/:id" element={<AddItemInInventory />} />
+                <Route path="/inventory/details/:id" element={<PrivateRoutes />}>
+                    <Route path="/inventory/details/:id" element={<DetailsInventory />} />
                 </Route>
             </Routes>
             

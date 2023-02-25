@@ -1,8 +1,0 @@
-Editar Inventário
-Editar item
-
-- Primeira atualização
-Atualizar o layout
-
-- Atualizações após a primeira versão.
-Aluno fazer solicitação de itens existentes do inventário

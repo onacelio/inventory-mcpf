@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ItemCard from "../items/ItemCard";
+import LinkButton from "../layout/LinkButton";
 import Loading from "../layout/Loading";
 import Message from "../layout/Message";
 
@@ -11,6 +12,9 @@ export default function Inventory() {
     const [inventory, setInventory] = useState([])
     const [message, setMessage] = useState("")
     const [removeLoading, setRemoveLoading] = useState(false)
+
+    
+    const user = JSON.parse(sessionStorage.getItem("@AuthFirebase:user"))
 
     useEffect(() => {
         fetch(`http://localhost:5000/inventorys/${id}`, {
@@ -56,6 +60,12 @@ export default function Inventory() {
     return (
         <div className="mt-28 p-3 flex flex-col w-full min-h-screen">
             {message && <Message type="bg-mcpf-green text-mcpf-text" msg={message}/>}
+            <div className="flex justify-between items-center p-5">
+                { user.email.split("@")[1] !== "aluno.ce.gov.br" ? (
+                    <><h1>INVENTÁRIO: {inventory.name}</h1><LinkButton to={`/inventory/details/${id}`} text="DETALHES DO INVENTÁRIO" /></>)
+                : <h1>INVENTÁRIO: {inventory.name}</h1>
+                }
+            </div>
             <div className="flex flex-wrap max-w-full justify-start">
                 { items.length > 0 &&
                     items.map((item) => (

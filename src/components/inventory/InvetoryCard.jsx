@@ -18,8 +18,8 @@ export default function InventoryCard({ id, name, locale, handleRemove}) {
                 </h4>
                 <p className="mb-2 uppercase font-normal">Local: {locale}</p>
                 <div className="flex p-3 uppercase items-start flex-col lg:flex-row md:items-center">
-                    <LinkButton to={`/inventory/${id}`} text="Visualizar itens" />
-                    <LinkButton to={`/inventory/add/${id}`} text="+ Adicionar item"/>
+                    <LinkButton to={`/inventory/${id}`} text="itens" />
+                    <LinkButton to={`/inventory/details/${id}`} text="DETALHES"/>
                     <button onClick={remove} className="ml-3 flex items-center p-2">
                         <BsFillTrashFill className="mr-2"/> Apagar
                     </button>
@@ -34,7 +34,7 @@ export default function InventoryCard({ id, name, locale, handleRemove}) {
                 </h4>
                 <p className="mb-2 uppercase font-normal">Local: {locale}</p>
                 <div className="flex p-3 uppercase items-start flex-col lg:flex-row md:items-center">
-                    <LinkButton to={`/inventory/${id}`} text="Visualizar itens" />
+                    <LinkButton to={`/inventory/${id}`} text="Itens do inventário" />
                 </div>
             </div>
         )

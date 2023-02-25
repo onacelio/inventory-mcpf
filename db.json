@@ -1,49 +1,45 @@
 {
   "inventorys": [
     {
-      "name": "Teste",
+      "name": "Inventory MCPF",
       "locale": {
-        "id": "1",
-        "name": "Inventário Pessoal"
+        "id": "3",
+        "name": "Almoxarifado geral"
       },
       "items": [
         {
-          "name": "Nacélio",
-          "quantity": "1",
-          "state": "Novo",
-          "id": "18fbe7bb-8b8a-4c18-bb68-21b9390e0f34"
+          "name": "RJ45",
+          "quantity": "4",
+          "state": "Lacrado",
+          "id": "f6d497b6-6dc6-4d28-b57b-06386478837a"
         }
       ],
-      "id": 1
+      "id": 2
     }
   ],
   "locales": [
     {
       "id": 1,
-      "name": "Inventário Pessoal"
-    },
-    {
-      "id": 2,
       "name": "Laboratorio de Informática"
     },
     {
-      "id": 3,
+      "id": 2,
       "name": "Laboratorio de Matemática"
     },
     {
-      "id": 4,
+      "id": 3,
       "name": "Almoxarifado geral"
     },
     {
-      "id": 5,
+      "id": 4,
       "name": "Secretaria"
     },
     {
-      "id": 6,
+      "id": 5,
       "name": "Biblioteca"
     },
     {
-      "id": 7,
+      "id": 6,
       "name": "Cozinha"
     }
   ]
